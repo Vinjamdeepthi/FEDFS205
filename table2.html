@@ -1,117 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        table{
-            border-collapse:collapse
-        }
-        .td{
-            text-align:center
-        }
-        .s1{
-            color:burlywood
-        }
-        .s2{
-            color:chocolate
-        }
-        .s3{
-            color:blueviolet
-        }
-        .s5{
-            color:cadetblue
-        }
-        .b{
-            font-weight: bold;
-        }
-        .s4{
-            color:green
-        }
-        .vt{
-            writing-mode: vertical-rl;
-            text-orientation:upright
-        }
-    </style>
+  <title>Timetable</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 10px;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .blue { color: blue; }
+    .orange { color: orange; }
+    .purple { color: purple; }
+    .green { color: green; }
+    .red { color: red; }
+    .crimson { color: crimson; }
+    .bold { font-weight: bold; }
+    .vertical {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      font-weight: bold;
+      background-color: #f9f9f9;
+    }
+  </style>
 </head>
 <body>
-    <h1>Student data</h1>
-    <table border = "1">
-    <tr></tr>
-    <tr>
-        <td></td>
-        <td>8:30-9:30</td>
-        <td>8:30-9:30</td>
-        <td>8:30-9:30</td>
-        <td>8:30-9:30</td>
-        <td>8:30-9:30</td>
-        <td>8:30-9:30</td>
-        <td>8:30-9:30</td>
-        <td>8:30-9:30</td>
-    </tr>
-    <tr>
-        <td>Monday</td>
-        <td>---</td>
-        <td>SUB1</td>
-        <td>SUB2</td>
-        <td>SUB3</td>
-        <td  rowspan = "6">Lunch</td>
-        <td>SUB4</td>
-        <td>SUB5</td>
-        <td>CONSELLING CLASS</td>
-    </tr>
-    <tr>
-        <td>Tuesday</td>
-        <td>SUB1</td>
-        <td>SUB2</td>
-        <td>SUB3</td>
-         <td>---</td>
-         <td>SUB2</td>
-         <td>SUB2</td>
-        <td>Library</td>
-        
-    </tr>
-    <tr>
-         <td>Wednesday</td>
-        <td>SUB1</td>
-        <td>SUB2</td>
-        <td>SWA</td>
-         <td>---</td>
-        <td colspan="3">Lab</td>
-        
-    </tr>
-    <tr>
-         <td>THURSDAY</td>
-        <td>SUB1</td>
-        <td>SUB2</td>
-        <td>SUB3</td>
-        <td>---</td>
-        
-        <td>SUB2</td>
-        <td>SUB2</td>
-        <td>Library</td>
-    </tr>
-     <tr>
-         <td>FRIDAY</td>
-        <td>SUB1</td>
-        <td>SUB2</td>
-        <td>SUB3</td>
-        <td>---</td>
-        
-        <td>SUB4</td>
-        <td>SUB5</td>
-        <td>Library</td>
-    </tr>
-    <tr>
-         <td>Saturday</td>
-        <td>SUB1</td>
-        <td colspan="3">Seminar</td>
-        
-       <td>SUB44</td>
-        <td>SUB5</td>
-        <td>Library</td>
-    </tr>
-    </table>
+
+<h2>Class Timetable</h2>
+
+<table boarder="1">
+  <tr>
+    <th>Day / Time</th>
+    <th>8:30 - 9:30</th>
+    <th>9:30 - 10:30</th>
+    <th>10:30 - 11:30</th>
+    <th>11:30 - 12:30</th>
+    <th>12:30 - 2:00</th>
+    <th>2:00 - 3:00</th>
+    <th>3:00 - 4:00</th>
+    <th>4:00 - 5:00</th>
+  </tr>
+  <tr>
+    <td>MONDAY</td>
+    <td>----</td>
+    <td class="blue">SUB1</td>
+    <td class="orange">SUB2</td>
+    <td class="purple">SUB3</td>
+    <td rowspan="6" class="vertical">Lunch</td>
+    <td class="green">SUB4</td>
+    <td class="red">SUB5</td>
+    <td class="bold">COUNSELLING CLASS</td>
+  </tr>
+  <tr>
+    <td>TUESDAY</td>
+    <td class="blue">SUB1</td>
+    <td class="orange">SUB2</td>
+    <td class="purple">SUB3</td>
+    <td>---</td>
+    <td class="orange">SUB2</td>
+    <td class="orange">SUB2</td>
+    <td>LIBRARY</td>
+  </tr>
+  <tr>
+    <td>WEDNESDAY</td>
+    <td class="blue">SUB1</td>
+    <td class="orange">SUB2</td>
+    <td class="crimson">SWA</td>
+    <td>---</td>
+    <td colspan="2" class="bold">LAB</td>
+    <td>LIBRARY</td>
+  </tr>
+  <tr>
+    <td>THURSDAY</td>
+    <td class="blue">SUB1</td>
+    <td class="orange">SUB2</td>
+    <td class="purple">SUB3</td>
+    <td>---</td>
+    <td class="green">SUB4</td>
+    <td class="red">SUB5</td>
+    <td>LIBRARY</td>
+  </tr>
+  <tr>
+    <td>FRIDAY</td>
+    <td class="blue">SUB1</td>
+    <td class="orange">SUB2</td>
+    <td class="purple">SUB3</td>
+    <td>---</td>
+    <td class="green">SUB4</td>
+    <td class="red">SUB5</td>
+    <td>LIBRARY</td>
+  </tr>
+  <tr>
+    <td>SATURDAY</td>
+    <td class="blue">SUB1</td>
+    <td colspan="2" class="bold">SEMINAR</td>
+    <td></td>
+    <td class="green">SUB4</td>
+    <td class="red">SUB5</td>
+    <td>LIBRARY</td>
+  </tr>
+</table>
+
 </body>
 </html>
