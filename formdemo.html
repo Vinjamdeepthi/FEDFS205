@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormDemo</title>
+</head>
+<body>
+    <form action ="success.html">
+<caption> Student Registration System</caption>
+<br>
+<br>
+<label for ="fn">first name:</label> 
+<input type="text" id="fn"
+name="firstname" required>
+<br>
+<label for ="ln">last name:</label> 
+<input type="text" id="ln"
+name="lastname" required>
+<br>
+<br>
+<label for ="gn">Gender:</label>
+<input type="radio" name="Gender" value="male" >male
+<input type="radio"  name="Gender" value="female" >female
+<br>
+<br>
+<label>email:</label>
+<input type="email" required>
+<br>
+<br>
+<label>contact:</label>
+<input type="tel" pattern="[0-9]{10}"required>
+<br><br>
+<label> Date Of Birth:</label>
+<input type="date" required>
+<br><br>
+<label>address:</label>
+<textarea rows="5" required></textarea>
+<br><br>
+<label>languages known:</label>
+<input type="checkbox" value="telugu">telugu
+<input type="checkbox" value="english">english
+<input type="checkbox" value="french">french
+<input type="checkbox" value="japanese">japanese
+<br><br>
+<label>branch:</label>
+<select>
+    <option value ="CSE" >CSE</option>
+    <option value ="ECE" >ECE</option>
+    <option value ="EEE" >EEE</option>
+    <option value ="MECH" >MECH</option>
+    
+</select>
+<br><br>
+<label>upload resume</label>
+<input type="file" required><br>
+<button>Submit</button>
+</form>
+</body>
+</html>
