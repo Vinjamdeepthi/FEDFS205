@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar demo</title>
+    <style>
+        *{
+            border-radius: 10px;
+            
+        }
+.navbar{
+    display:flex;
+    background-color:darksalmon;
+    justify-content:space-between;
+    padding:10px 10px;
+}
+.navbar .logo{
+    flex:1;
+}
+.navbar .logo img{
+    width :200px;
+    height :100px;
+}
+.navbar .title{
+    flex:2;
+    text-align: center;
+    font-weight:bold;
+    font-size:40px;
+    color:black;
+}
+.navbar .links{
+    flex:1;
+}
+.navbar .links a{
+    color: white;
+    margin-left: 10px;
+    font-size:25px;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class ="logo">
+            <img src="kl.png">
+        </div>
+        <div class="title">
+            Learning Managment System
+        </div>
+<div class="links">
+    <a href ="https://www.kluniversity.in/">Home</a>
+     <a href ="https://www.kluniversity.in/Mission.aspx">About us</a>
+      <a href ="https://lms.kluniversity.in/login/index.php">Signin/Signup</a>
+</div>
+    </nav>
+</body>
+</html>
