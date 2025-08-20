@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("<h2>1. if statement</h2>");
+        let num = 10;
+        if(num > 5){
+            document.write(num + " is positive","<br><br>");
+        }
+        document.write("<h2>2. if-else statement</h2>");
+        let age =  16;
+        if(age >= 18){
+            document.write("you are eligible to vote","<br><br>");
+        }else{
+             document.write("you are not eligible to vote","<br><br>");
+        }
+
+        document.write("<h2>3.Standard for loop<h2>");
+            for(let i =0;i<numbers.length;i++){
+                document.write("Number: "+numbers[i],"<br>");
+            }
+            document.write("<br>");
+            document.write("<h2>4. for-in loop</h2>");
+            for(let index in numbers){
+                document.write("Index: "+index + ", Value: "+numbers[index]+"<br>");
+            }
+            document.write("<br>");
+            documment.write("<h2>5. for-of loop</h2>");
+            for(let value of numbers){
+                document.write("Vlues: "+value+"<br>");
+            }
+            document.write("<br>");
+            doucment.write("<h2>6. foreach() method</h2>");
+            numbers.foreach(function(value,index){
+                document.write("Index: "+index + ", Value: "+value+"<br>");
+            });
+            document.write("<br>");
+            let student = {name: "John", age:20,grade:"A"};
+            document.write("<h2>7. for -int with object</h2>");
+            for(let key in student){
+                document.write(key+ " : "+ student[key]+"<br>");
+            }   
+            document.write("<h2> 8. for-of with string</h2>");
+            let word = "hello";
+            for(let char of word){
+                document.write(char + "<br>");
+            }     
+    </script>
+</body>
+</html>
